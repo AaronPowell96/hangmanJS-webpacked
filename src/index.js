@@ -1,16 +1,16 @@
+import Hangman from "./hangman"
+
 let game1;
 const guessesEl = document.querySelector("#guesses");
 const puzzleEl = document.querySelector("#puzzle");
 
 // puzzleEl.textContent = `Word: ${game1.puzzle}`;
 // guessesEl.textContent = game1.message;
-//test
 window.addEventListener("keypress", e => {
   const guess = String.fromCharCode(e.charCode);
   game1.guess(guess);
   render();
 });
-
 const render = () => {
   puzzleEl.innerHTML = "";
   guessesEl.textContent = game1.message;
