@@ -10,6 +10,8 @@ const getPuzzle = async wordCount => {
   }
 };
 
+export { getPuzzle as default }
+
 // const getCountryDetails = async cCode => {
 //   const response = await fetch("//restcountries.eu/rest/v2/all");
 //   if (response.status === 200) {
