@@ -46,3 +46,5 @@ class Hangman {
     else this.status = "playing";
   }
 }
+
+export { Hangman as default }
